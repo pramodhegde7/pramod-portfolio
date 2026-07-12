@@ -1,18 +1,64 @@
-# React + Vite
+# 🌐 Pramod Hegde Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website built using React and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Coming Soon...
 
-## React Compiler
+## 👨‍💻 About
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+I'm Pramod Hegde, an MCA student at Manipal Institute of Technology with a passion for Full Stack Web Development.
 
-Note: This will impact Vite dev & build performances.
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Responsive Design
+- Modern UI
+- About Me
+- Skills
+- Featured Project
+- Experience Timeline
+- Certifications
+- Contact Section
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+
+## 📂 Featured Project
+
+### Ayush-Link
+
+Clinic Appointment & Live Queue Management System
+
+**Tech Stack**
+
+- React
+- Flask
+- Python
+- MongoDB
+
+GitHub:
+https://github.com/pramodhegde7/Aayush-project
+
+## 📦 Installation
+
+```bash
+npm install
+npm run dev
+```
+
+## 📧 Contact
+
+Email:
+pramodhegde2004@gmail.com
+
+GitHub:
+https://github.com/pramodhegde7
+
+LinkedIn:
+https://linkedin.com/in/pramodhegde7
