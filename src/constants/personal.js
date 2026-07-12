@@ -1,3 +1,4 @@
+import resume from "../assets/resume/resume.pdf";
 const personal = {
   name: "Pramod Hegde",
 
@@ -19,7 +20,7 @@ const personal = {
 
   linkedin: "https://www.linkedin.com/in/pramodhegde7",
 
-  resume: "/resume/Pramod_Hegde_Resume.pdf",
+  resume: resume,
 };
 
 export default personal;

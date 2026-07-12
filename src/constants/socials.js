@@ -1,7 +1,6 @@
 import {
   FaGithub,
   FaLinkedin,
-  FaEnvelope,
 } from "react-icons/fa";
 
 const socials = [
@@ -13,12 +12,7 @@ const socials = [
   {
     name: "LinkedIn",
     icon: FaLinkedin,
-    link: "https://www.linkedin.com/", // Replace with your profile later
-  },
-  {
-    name: "Email",
-    icon: FaEnvelope,
-    link: "mailto:pramodhegde2004@gmail.com",
+    link: "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME",
   },
 ];
 

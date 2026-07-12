@@ -21,6 +21,15 @@ function Certifications() {
 
               <span>{certificate.year}</span>
 
+              <a
+                 href={certificate.file}
+                 target="_blank"
+                 rel="noreferrer"
+                 className="certificate-btn"
+              >
+              👁 View Certificate
+              </a>
+
             </div>
           ))}
 
