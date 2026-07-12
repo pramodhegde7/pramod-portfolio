@@ -1,0 +1,136 @@
+/* ===== NAVBAR ===== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(15,23,42,.75);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.navbar-container{
+    width:min(1200px,92%);
+    margin:auto;
+
+    height:72px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* ===== LOGO ===== */
+
+.logo{
+    text-decoration:none;
+}
+
+.logo span{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#38BDF8;
+    color:#fff;
+
+    font-size:20px;
+    font-weight:700;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.logo span:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 30px rgba(56,189,248,.4);
+}
+
+/* ===== LINKS ===== */
+
+.nav-links{
+
+    display:flex;
+    gap:40px;
+
+    list-style:none;
+}
+
+.nav-links a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    position:relative;
+}
+
+.nav-links a:hover{
+
+    color:#38BDF8;
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#38BDF8;
+
+    transition:.3s;
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+}
+
+/* ===== RESUME BUTTON ===== */
+
+.resume-btn{
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    background:#38BDF8;
+
+    color:#fff;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.resume-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#0EA5E9;
+
+    box-shadow:0 10px 30px rgba(56,189,248,.4);
+}
