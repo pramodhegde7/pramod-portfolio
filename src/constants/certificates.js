@@ -1,7 +1,7 @@
 import internshipCertificate from "../assets/certificates/sumukha_internship.jpeg";
 const certificates = [
   {
-  title: "Python Full Stack Development Internship",
+  title: "Full Stack Web Development Internship",
   issuer: "DGSumukha Tech Solutions LLP",
   year: "2026",
   file: internshipCertificate,

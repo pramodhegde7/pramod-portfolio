@@ -12,7 +12,7 @@ const socials = [
   {
     name: "LinkedIn",
     icon: FaLinkedin,
-    link: "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME",
+    link: "https://www.linkedin.com/in/pramodhegde7",
   },
 ];
 

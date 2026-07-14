@@ -2,10 +2,10 @@ import resume from "../assets/resume/resume.pdf";
 const personal = {
   name: "Pramod Hegde",
 
-  role: "Aspiring Full Stack Developer",
+  role: "MCA Student | Full Stack Developer",
 
   description:
-    "Building modern, scalable web applications using React, Python, Flask and MongoDB.",
+    "Building modern, scalable web applications using React, Python, Flask & MongoDB.",
 
   college:
     "Currently pursuing Master of Computer Applications (MCA) at Manipal Institute of Technology.",

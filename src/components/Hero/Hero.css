@@ -317,3 +317,17 @@ height:260px;
 }
 
 }
+
+.hero-greeting{
+    display:block;
+    color:#38BDF8;
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.hero-location{
+    margin:20px 0 30px;
+    color:#94A3B8;
+    font-size:18px;
+}

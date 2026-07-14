@@ -11,7 +11,9 @@ function Hero() {
         <div className="hero-left">
 
           <p className="hero-greeting">
-            Hello, I'm 👋
+            <span className="hero-greeting">
+    👋 Hello, I'm
+</span>
           </p>
 
           <h1 className="hero-name">
@@ -30,6 +32,10 @@ function Hero() {
             {personal.college}
           </p>
 
+          <p className="hero-location">
+    📍 {personal.location}
+</p> <br />
+
           <div className="hero-buttons">
 
             <a
@@ -38,7 +44,7 @@ function Hero() {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              📄 Resume
+             📄 Resume
             </a>
 
             <a
@@ -47,7 +53,7 @@ function Hero() {
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              🐙 GitHub
+              💻 GitHub
             </a>
 
             <a

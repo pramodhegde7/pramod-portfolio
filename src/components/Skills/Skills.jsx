@@ -1,54 +1,60 @@
 import "./Skills.css";
 import skills from "../../constants/skills";
 
+const categories = ["Frontend", "Backend", "Database", "Tools"];
+
 function Skills() {
   return (
     <section className="skills" id="skills">
       <div className="container">
 
         <h2 className="section-title">
-          My <span>Skills</span>
+          Technical <span>Skills</span>
         </h2>
 
-        <div className="skills-grid">
+        {categories.map((category) => (
+          <div key={category} className="skills-category">
 
-          {skills.map((skill, index) => {
-            const Icon = skill.icon;
+            <h3 className="category-title">{category}</h3>
 
-            return (
-              <div className="skill-card" key={index}>
+            <div className="skills-grid">
 
-                <div className="skill-header">
+              {skills
+                .filter((skill) => skill.category === category)
+                .map((skill, index) => {
+                  const Icon = skill.icon;
 
-                  <div className="skill-title">
-                    <Icon className="skill-icon" />
-                    <h3>{skill.name}</h3>
-                  </div>
+                  return (
+                    <div className="skill-card" key={index}>
 
-                  <span className="skill-level">
-                    {skill.level}
-                  </span>
+                      <div className="skill-header">
 
-                </div>
+                        <div className="skill-title">
+                          <Icon className="skill-icon" />
+                          <h3>{skill.name}</h3>
+                        </div>
 
-                <div className="progress-bar">
+                        <span className="skill-level">
+                          {skill.level}
+                        </span>
 
-                  <div
-                    className="progress-fill"
-                    style={{ width: `${skill.percentage}%` }}
-                  ></div>
+                      </div>
 
-                </div>
+                      <div className="progress-bar">
+                        <div
+                          className="progress-fill"
+                          style={{ width: `${skill.percentage}%` }}
+                        ></div>
+                      </div>
 
-                <p className="skill-percent">
-                  {skill.percentage}%
-                </p>
+                    </div>
+                  );
+                })}
 
-              </div>
-            );
-          })}
+            </div>
 
-        </div>
+          </div>
+        ))}
 
       </div>
     </section>
