@@ -733,12 +733,23 @@ transform:translateY(0);
 }
 
 .project-browser{
-    margin-top:50px;
+
+    margin:50px auto 0;
+
+    width:fit-content;
+
+    max-width:100%;
+
     display:flex;
+
     gap:24px;
+
     overflow-x:auto;
-    padding:10px 5px 20px;
+
+    padding:10px 20px 20px;
+
     scroll-behavior:smooth;
+
 }
 
 .project-browser::-webkit-scrollbar{
@@ -751,8 +762,8 @@ transform:translateY(0);
 }
 
 .browser-card{
-    min-width:280px;
-    max-width:280px;
+    min-width:320px;
+    max-width:320px;
     background:#1E2D4E;
     border:1px solid rgba(56,189,248,.15);
     border-radius:18px;
@@ -763,14 +774,19 @@ transform:translateY(0);
 }
 
 .browser-card:hover{
-    transform:translateY(-8px);
+
+    transform:translateY(-10px);
+
     border-color:#38BDF8;
-    box-shadow:0 20px 40px rgba(56,189,248,.15);
+
+    box-shadow:0 25px 45px rgba(56,189,248,.18);
+
 }
 
 .browser-card img{
     width:100%;
-    height:170px;
+    height:190px;
+    transition:.4s;
     object-fit:cover;
     display:block;
 }
@@ -815,4 +831,42 @@ transform:translateY(0);
     border-radius:10px;
     cursor:pointer;
     font-weight:600;
+}
+
+.open-project{
+
+    color:#38BDF8;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    transition:.3s;
+
+}
+
+.browser-card:hover .open-project{
+
+    transform:translateX(6px);
+
+}
+
+.project-card{
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+}
+
+.fade-in{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.fade-out{
+    opacity:0;
+    transform:translateY(20px);
 }

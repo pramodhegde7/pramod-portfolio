@@ -21,6 +21,7 @@ const [lightboxProject, setLightboxProject] = useState(null);
 const [lightboxIndex, setLightboxIndex] = useState(0);
 const [selectedProject, setSelectedProject] = useState(0);
 const currentProject = projects[selectedProject];
+const [fade, setFade] = useState(true);
   /* ===========================
      CASE STUDY
   =========================== */
@@ -39,7 +40,7 @@ const currentProject = projects[selectedProject];
         </h2>
 
         
-        <div className="project-card">
+        <div className={`project-card ${fade ? "fade-in" : "fade-out"}`}>
 
             {/* CONTENT */}
 
@@ -148,18 +149,33 @@ const currentProject = projects[selectedProject];
 
     <h4>Application Screens</h4>
 
-    <p>
+   <div className="gallery-tags">
+
   {currentProject.images
     .slice(0, 3)
-    .map((img) => img.title)
-    .join(" • ")}
+    .map((img, index) => (
 
-  {currentProject.images.length > 3 && " • +More"}
-</p>
+      <span key={index}>
+        {img.title}
+      </span>
+
+  ))}
+
+  {currentProject.images.length > 3 && (
+
+    <span>
+      +{currentProject.images.length - 3}
+    </span>
+
+  )}
+
+</div>
 
     <small>
-        {currentProject.images.length} Screens • Click to Explore
-    </small>
+
+📷 {currentProject.images.length} Screens Available
+
+</small>
 
 </div>
   </div>
@@ -271,21 +287,29 @@ const currentProject = projects[selectedProject];
         key={project.id}
         onClick={() => {
 
-          const newIndex = projects.findIndex(
-            p => p.id === project.id
-          );
+  const newIndex = projects.findIndex(
+    p => p.id === project.id
+  );
 
-          setSelectedProject(newIndex);
-          setExpandedProject(null);
+  setFade(false);
 
-          document
-            .getElementById("projects")
-            ?.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
+  setTimeout(() => {
 
-        }}
+    setSelectedProject(newIndex);
+    setExpandedProject(null);
+
+    setFade(true);
+
+    document
+      .getElementById("projects")
+      ?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+  }, 180);
+
+}}
       >
 
         <img
@@ -313,11 +337,11 @@ const currentProject = projects[selectedProject];
 
           </div>
 
-          <button>
+          <div className="open-project">
 
-            Open Project →
+          ↗ Open Project
 
-          </button>
+          </div>
 
         </div>
 

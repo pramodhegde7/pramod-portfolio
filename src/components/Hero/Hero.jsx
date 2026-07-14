@@ -17,29 +17,29 @@ function Hero() {
           </p>
 
           <h1 className="hero-name">
-            {personal.name}
+            {personal.basic.name}
           </h1>
 
           <h2 className="hero-role">
-            {personal.role}
+            {personal.basic.role}
           </h2>
 
           <p className="hero-description">
-            {personal.description}
+            {personal.basic.description}
           </p>
 
           <p className="hero-college">
-            {personal.college}
+            {personal.basic.college}
           </p>
 
           <p className="hero-location">
-    📍 {personal.location}
+    📍 {personal.contact.location}
 </p> <br />
 
           <div className="hero-buttons">
 
             <a
-              href={personal.resume}
+              href={personal.contact.resume}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
@@ -48,7 +48,7 @@ function Hero() {
             </a>
 
             <a
-              href={personal.github}
+              href={personal.contact.github}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
@@ -57,7 +57,7 @@ function Hero() {
             </a>
 
             <a
-              href={personal.linkedin}
+              href={personal.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
@@ -78,7 +78,7 @@ function Hero() {
 
             <img
               src={heroImage}
-              alt={personal.name}
+              alt={personal.basic.name}
               className="hero-image"
             />
 

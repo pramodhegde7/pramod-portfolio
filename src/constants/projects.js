@@ -122,44 +122,7 @@ const projects = [
   },
 
   // Future projects go here
-
-  /*
-  {
-      id:2,
-
-      title:"Student Registration System",
-
-      subtitle:"",
-
-      description:"",
-
-      status:"Completed",
-
-      role:"",
-
-      duration:"",
-
-      github:"",
-      live:"",
-
-      images:[],
-
-      metrics:[],
-
-      technologies:[],
-
-      features:[],
-
-      caseStudy:{
-          problem:"",
-          solution:"",
-          challenges:[],
-          outcome:[],
-          learned:[]
-      }
-
-  }
-  */
+/*
  {
   id: 2,
 
@@ -259,7 +222,8 @@ const projects = [
     ],
   },
 },
-
+*/
 ];
+
 
 export default projects;
