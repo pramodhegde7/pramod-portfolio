@@ -1,9 +1,8 @@
-/* ===========================
+/* =========================================================
    NAVBAR
-=========================== */
+========================================================= */
 
 .navbar{
-
     position:fixed;
     top:0;
     left:0;
@@ -11,7 +10,6 @@
     z-index:1000;
 
     background:rgba(15,23,42,.78);
-
     backdrop-filter:blur(18px);
 
     border-bottom:1px solid rgba(255,255,255,.08);
@@ -33,14 +31,17 @@
     position:relative;
 }
 
-/* ===========================
-   LOGO
-=========================== */
+/* =========================================================
+   DESKTOP LOGO
+========================================================= */
 
-.logo{
+.desktop-logo{
+
     display:flex;
     align-items:center;
     justify-content:center;
+
+    text-decoration:none;
 }
 
 .logo-image{
@@ -49,26 +50,43 @@
     height:54px;
 
     object-fit:contain;
-
-    transition:.35s ease;
 }
 
-.logo-image:hover{
+/* =========================================================
+   MOBILE AVATAR
+========================================================= */
 
-    transform:translateY(-3px) scale(1.05);
+.mobile-avatar{
 
-    filter:drop-shadow(0 8px 18px rgba(56,189,248,.35));
+    display:none;
 
+    padding:0;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
 }
 
+.avatar-image{
 
+    width:46px;
+    height:46px;
 
+    object-fit:cover;
 
-/* ===========================
-   DESKTOP NAVIGATION
-=========================== */
+    border-radius:50%;
+
+    border:2px solid rgba(56,189,248,.45);
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 .nav{
+
     display:flex;
     align-items:center;
 }
@@ -76,6 +94,7 @@
 .nav-links{
 
     display:flex;
+
     gap:40px;
 
     list-style:none;
@@ -89,12 +108,13 @@
 
     font-weight:500;
 
-    transition:.3s ease;
+    transition:.3s;
 
     position:relative;
 
     padding:6px 0;
 }
+
 .nav-links a:hover{
 
     color:#38BDF8;
@@ -122,23 +142,22 @@
 
     width:100%;
 }
-/* Active Navigation */
+
+/* Active */
 
 .nav-links a.active{
 
     color:#38BDF8;
-
 }
 
 .nav-links a.active::after{
 
     width:100%;
-
 }
 
-/* ===========================
+/* =========================================================
    RESUME BUTTON
-=========================== */
+========================================================= */
 
 .resume-btn{
 
@@ -148,9 +167,9 @@
 
     background:#38BDF8;
 
-    color:white;
+    color:#fff;
 
-    border-radius:20px;
+    border-radius:14px;
 
     font-weight:600;
 
@@ -159,16 +178,16 @@
 
 .resume-btn:hover{
 
-    transform:translateY(-4px);
-
     background:#0EA5E9;
 
-    box-shadow:0 14px 35px rgba(56,189,248,.35);
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(56,189,248,.28);
 }
 
-/* ===========================
+/* =========================================================
    HAMBURGER
-=========================== */
+========================================================= */
 
 .hamburger{
 
@@ -186,24 +205,42 @@
     width:28px;
     height:3px;
 
-    background:white;
+    background:#fff;
 
     border-radius:2px;
 
     transition:.3s;
 }
 
-/* ===========================
+/* =========================================================
    MOBILE
-=========================== */
+========================================================= */
 
 @media (max-width:768px){
 
+    /* Desktop Logo */
+
+    .desktop-logo{
+
+        display:none;
+    }
+
+    /* Mobile Avatar */
+
+    .mobile-avatar{
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
     .resume-btn{
+
         display:none;
     }
 
     .hamburger{
+
         display:flex;
     }
 
@@ -227,7 +264,7 @@
         transition:.35s ease;
 
         display:block;
-}
+    }
 
     .nav.active{
 
@@ -236,7 +273,7 @@
         opacity:1;
 
         border-top:1px solid rgba(255,255,255,.08);
-}
+    }
 
     .nav-links{
 
