@@ -28,11 +28,12 @@ A modern, responsive, and interactive developer portfolio built using **React**.
 
 ### Desktop
 
-/screenshots/desktop-home.png
+![Desktop Preview](screenshots/desktop-home.png)
+
 
 ### Mobile
 
-/screenshots/mobile-home.jpeg
+![Mobile Preview](screenshots/mobile-home.jpeg)
 
 ---
 
