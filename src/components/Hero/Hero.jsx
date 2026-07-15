@@ -2,18 +2,25 @@ import "./Hero.css";
 import heroImage from "../../assets/images/hero.png";
 import personal from "../../constants/personal";
 
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFileAlt,
+  FaMapMarkerAlt,
+  FaCheckCircle,
+} from "react-icons/fa";
+
 function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-container">
 
         {/* Left Side */}
+
         <div className="hero-left">
 
           <p className="hero-greeting">
-            <span className="hero-greeting">
-    👋 Hello, I'm
-</span>
+            👋 Hello, I'm
           </p>
 
           <h1 className="hero-name">
@@ -32,9 +39,19 @@ function Hero() {
             {personal.basic.college}
           </p>
 
-          <p className="hero-location">
-    📍 {personal.contact.location}
-</p> <br />
+          <div className="hero-meta">
+
+          <div className="hero-location">
+            <FaMapMarkerAlt />
+            <span>{personal.contact.location}</span>
+              </div>
+
+             <div className="hero-status">
+                <FaCheckCircle />
+               <span>{personal.hero.status}</span>
+              </div>
+
+            </div>
 
           <div className="hero-buttons">
 
@@ -44,7 +61,8 @@ function Hero() {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-             📄 Resume
+              <FaFileAlt />
+              Resume
             </a>
 
             <a
@@ -53,7 +71,8 @@ function Hero() {
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              💻 GitHub
+              <FaGithub />
+              GitHub
             </a>
 
             <a
@@ -62,7 +81,8 @@ function Hero() {
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              💼 LinkedIn
+              <FaLinkedin />
+              LinkedIn
             </a>
 
           </div>
@@ -70,6 +90,7 @@ function Hero() {
         </div>
 
         {/* Right Side */}
+
         <div className="hero-right">
 
           <div className="hero-image-wrapper">

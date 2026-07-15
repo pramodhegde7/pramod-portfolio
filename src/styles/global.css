@@ -27,11 +27,18 @@ img{
 
 section{
     width:100%;
-    min-height:100vh;
-    padding:110px 8% 80px;
+    min-height:auto;
+    padding:80px 8%;
 }
 
 .container{
     max-width:1200px;
     margin:auto;
+}
+
+html{
+
+    scroll-behavior:smooth;
+    scroll-padding-top:90px;
+
 }

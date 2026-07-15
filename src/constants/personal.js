@@ -4,7 +4,9 @@ const personal = {
   // ===========================
   // BASIC INFORMATION
   // ===========================
-
+  hero: {
+  status: "Open to Internships",
+},
   basic: {
     name: "Pramod Hegde",
 
