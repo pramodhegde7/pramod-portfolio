@@ -1,5 +1,5 @@
 import "./Hero.css";
-import heroImage from "../../assets/images/hero.png";
+import heroImage from "../../assets/images/hero.webp";
 import personal from "../../constants/personal";
 
 import {

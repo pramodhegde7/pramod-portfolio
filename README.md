@@ -1,64 +1,191 @@
-# 🌐 Pramod Hegde Portfolio
+# 👋 Pramod Hegde – Personal Portfolio
 
-My personal portfolio website built using React and Vite.
+A modern, responsive, and interactive developer portfolio built using **React**. It showcases my projects, skills, certifications, experience, and contact information in a clean and professional interface.
 
-## 🚀 Live Demo
-
-Coming Soon...
-
-## 👨‍💻 About
-
-I'm Pramod Hegde, an MCA student at Manipal Institute of Technology with a passion for Full Stack Web Development.
+🌐 **Live Portfolio:** https://pramod-portfolio-t3c7.vercel.app
+---
 
 ## ✨ Features
 
-- Responsive Design
-- Modern UI
-- About Me
-- Skills
-- Featured Project
-- Experience Timeline
-- Certifications
-- Contact Section
+- 🎨 Modern and responsive UI
+- 📱 Mobile-first design
+- 👤 Interactive profile avatar
+- 🚀 Smooth scrolling navigation
+- 📂 Featured projects with GitHub & Live Demo
+- 🏆 Certificates with image preview
+- 💼 Experience timeline
+- 🛠️ Skills categorized by technology
+- 📄 Resume download
+- 📬 Contact section with social links
+- ⚡ Fast performance with Vite
+- 🌙 Clean dark theme
 
-## 🛠 Tech Stack
+---
+
+# 📸 Preview
+
+> Add screenshots here after uploading them to GitHub.
+
+### Desktop
+
+```
+/screenshots/desktop-home.png
+```
+
+### Mobile
+
+```
+/screenshots/mobile-home.jpeg
+```
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
 
 - React
 - Vite
-- JavaScript
+- JavaScript (ES6+)
 - HTML5
 - CSS3
 
-## 📂 Featured Project
+### Libraries
 
-### Ayush-Link
+- React Icons
+- Yet Another React Lightbox
 
-Clinic Appointment & Live Queue Management System
+### Deployment
 
-**Tech Stack**
+- Vercel
 
-- React
-- Flask
-- Python
-- MongoDB
+---
 
-GitHub:
-https://github.com/pramodhegde7/Aayush-project
+# 📂 Folder Structure
 
-## 📦 Installation
+```text
+src
+│
+├── assets
+│   ├── images
+│   └── resume
+│
+├── components
+│   ├── Navbar
+│   ├── Hero
+│   ├── About
+│   ├── Skills
+│   ├── Projects
+│   ├── Experience
+│   ├── Certificates
+│   ├── Contact
+│   └── Footer
+│
+├── constants
+│   ├── personal.js
+│   ├── projects.js
+│   ├── skills.js
+│   ├── certificates.js
+│   ├── experience.js
+│   └── navigation.js
+│
+└── App.jsx
+```
+
+---
+
+# 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/pramodhegde7/portfolio.git
+```
+
+### Navigate to the project
+
+```bash
+cd portfolio
+```
+
+### Install dependencies
 
 ```bash
 npm install
+```
+
+### Start development server
+
+```bash
 npm run dev
 ```
 
-## 📧 Contact
+### Build for production
 
-Email:
-pramodhegde2004@gmail.com
+```bash
+npm run build
+```
 
-GitHub:
+---
+
+# 📌 Sections
+
+- Home
+- About
+- Skills
+- Projects
+- Experience
+- Certificates
+- Contact
+
+---
+
+# 📄 Resume
+
+The latest version of my resume is available directly from the portfolio.
+
+---
+
+# 📬 Connect With Me
+
+**Portfolio**
+
+https://pramod-portfolio-t3c7.vercel.app
+
+**GitHub**
+
 https://github.com/pramodhegde7
 
-LinkedIn:
+**LinkedIn**
+
 https://linkedin.com/in/pramodhegde7
+
+**Email**
+
+pramodhegde2004@gmail.com
+
+---
+
+# ⭐ Future Improvements
+
+- Project detail pages
+- Blog section
+- Dark/Light theme toggle
+- More featured projects
+- Performance optimizations
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+Feel free to fork this repository for learning purposes, but please do not copy the design or content directly.
+
+---
+
+## 🙏 Thank You
+
+Thank you for visiting my portfolio!
+
+If you like this project, consider giving it a ⭐ on GitHub.

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "./Navbar.css";
-import logo from "../../assets/images/logo.png";
-import avatar from "../../assets/images/avatar.png";
-import heroImage from "../../assets/images/hero.png";
+import logo from "../../assets/images/logo.webp";
+import avatar from "../../assets/images/avatar.webp";
+import heroImage from "../../assets/images/hero.webp";
 import navigation from "../../constants/navigation";
 import personal from "../../constants/personal";
 import Lightbox from "yet-another-react-lightbox";
@@ -67,8 +67,10 @@ function Navbar() {
           >
             <img
               src={logo}
-              alt="Pramod Hegde Logo"
+              alt="Pramod Hegde"
               className="logo-image"
+              loading="eager"
+              decoding="async"
             />
           </a>
 
@@ -82,10 +84,12 @@ function Navbar() {
             aria-label="View Profile Photo"
           >
             <img
-              src={avatar}
-              alt="Pramod Hegde"
-              className="avatar-image"
-            />
+            src={avatar}
+            alt="Pramod Hegde"
+            className="avatar-image"
+            loading="eager"
+            decoding="async"
+          />
           </button>
 
           {/* ===========================
